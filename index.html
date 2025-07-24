@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <title>WPS Solutions</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav">
+                <div class="logo-nav">
+                    <img src="./src/img/logo.png" alt="logo do cabeçalho">
+                    <h2 class="title-nav">WPS Solutions</h2>
+                </div>
+                <div class="links-nav">
+                    <ul class="list-link-nav">
+                        <li class="link-nav">
+                            <a href="#about" class="link-nav">Sobre</a>
+
+                        </li>
+                        <li class="link-nav">
+                            <a href="#services" class="link-nav">Serviços</a>
+
+                        </li>
+                        <li class="link-nav">
+                            <a href="#testimonys" class="link-nav">Depoimentos</a>
+
+                        </li>
+                        <li class="link-nav">
+                            <a href="#contacts" class="link-nav">Contatos</a>
+                        </li>
+                    </ul>
+                    <!-- <a href="#" class="link-nav"></a> -->
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="about">
+                <div class="container-geral">
+                    <div class="text-about">
+                        <h2>Somos uma empresa especializada em serviços <span>eletrodomésticos, automações e segurança</span> para todos o território brasileiro.</h2>
+                        <p>Nosso foco é trazer qualidade, saúde e eficiência para o povo brasileiro</p>
+                        <div class="container-buttons">
+                            <div class="button-about">
+                                <a href="https://wa.me/5511976219954" target="_blank">Faça seu Orçamento!</a>
+                            </div>
+                            <div class="buttons-links">
+                                <a href="https://wa.me/5511976219954" target="_blank" class="link-about"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://instagram.com/wps_solutions" target="_blank" class="link-about"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://github.com/wtc13" class="link-about" target="_blank"><i class="fa-brands fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-about">
+                        <img src="./src/img/logo.png" alt="imagem da home">
+                    </div>
+                </div>               
+            </section>
+            <section id="services">
+                <div class="container-services">
+                    <h2>Serviços</h2>
+                    <div class="owl-carousel owl-theme" id="handlebar">
+                        <script id="template-services" type="text/x-handlebars-template">
+                            {{#each servicos}}
+                                    <div class="item">
+                                        <img src="{{imagem}}" alt="foto do serviço">
+                                        <h5>{{servico}}</h5>
+                                        <p class="description-services">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        <a href="https://wa.me/5511976219954" target="_blank">Solicite este serviço!</a>
+                                    </div>
+                            {{/each}}
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonys">
+                <h2>Feedbacks</h2>
+                <div class="container-testimonys">
+                    <div class="img-testimonys">
+                        <img src="./src/img/logo.png" alt="Foto do serviço do feedback">
+                    </div>
+                    <div class="data-testimonys">
+                        <div class="feedback">
+                            <div class="img-feedback">
+                                <img src="./src/img/logo.png" alt="foto do cliente">
+                            </div>
+                            <div class="texts-feedback">
+                                <div class="name-feedback">
+                                    <h5>Nome do cliente</h5>
+                                    <div class="star-feedback">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text-feedback">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback">
+                            <div class="img-feedback">
+                                <img src="./src/img/logo.png" alt="foto do cliente">
+                            </div>
+                            <div class="texts-feedback">
+                                <div class="name-feedback">
+                                    <h5>Nome do cliente</h5>
+                                    <div class="star-feedback">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text-feedback">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="link-testimonys">
+                            <a href="#" target="_blank">Faça seu Orçamento!</a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <section id="contacts">
+                <h2>Entre em Contato</h2>
+                <div class="container-contacts">
+                    <div class="data-contacts">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="links-contacts">
+                            <ul class="list-contacts">
+                                <li class="link-contacts">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="link-contacts">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="link-contacts">
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="forms-contacts">
+                        <label for="#">Nome</label>
+                        <input type="text" name="name" id="name">
+                        <label for="#">Telefone:</label>
+                        <input type="text" name="phone-number" id="phone_number">
+                        <label for="#">Email:</label>
+                        <input type="email" name="" id="">
+                        <textarea name="msg-forms" id="msg_forms" placeholder="Escreve sua mensagem"></textarea>
+                        <button type="submit">Envie sua mensagem!</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="containet-footer">
+                <p>Todos os direitos reservados a WPS Solutions&nbsp;</p>
+                <a href="#home">
+                    <button><i class="fa-up-arrow"></i></button>
+                </a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
