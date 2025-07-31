@@ -4,6 +4,7 @@
 @import url(./home.css);
 @import url(./services.css);
 @import url(./testimonys.css);
+@import url(./contacts.css);
 
 :root{
     --bg-blue: #bdc2ee;
@@ -18,11 +19,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", 'Courier New', Courier, monospace;
-}
-
-#contacts{
-    background-color: violet;
-    min-height: 100vh;
 }
 
 #footer{
